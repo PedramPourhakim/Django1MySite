@@ -4,3 +4,5 @@ python manage.py startapp website
 
 
 search -> Django cheatsheet
+
+./wget.exe -r 
