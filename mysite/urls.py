@@ -22,7 +22,8 @@ from mysite.settings import STATIC_ROOT,STATIC_URL,MEDIA_URL,MEDIA_ROOT
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path ('url address', 'view', 'name')
-    path('',include('website.urls'))
+    path('',include('website.urls')),
+    path('blog/',include('blog.urls'))
 ]
 # static('static','base / static')
 urlpatterns += static(STATIC_URL,document_root=STATIC_ROOT)
